@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="MainWindow" parent="GtkApplicationWindow">
+    <property name="title">sys-info-fetch</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkGrid" id="my_grid">
+            <property name="halign">center</property>
+            <!-- mem -->
+
+            <child>
+              <object class="GtkLabel" id="total_memory_label">
+                <property name="label">Total memory</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="name">total_memory_label</property>
+                <layout>
+                  <property name="row">0</property>
+                  <property name="column">0</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="total_memory_value">
+                <property name="label">Total value</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="selectable">true</property>
+                <property name="name">total_memory_value</property>
+                <layout>
+                  <property name="row">0</property>
+                  <property name="column">1</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+
+
+            <!-- System name -->
+            <child>
+              <object class="GtkLabel" id="name_label">
+                <property name="label">System name</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="name">name_label</property>
+                <layout>
+                  <property name="row">1</property>
+                  <property name="column">0</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="name_label_value">
+                <property name="label">name_label_value</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="selectable">true</property>
+                <property name="name">name_label_value</property>
+                <layout>
+                  <property name="row">1</property>
+                  <property name="column">1</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <!-- Kernal version -->
+            <child>
+              <object class="GtkLabel" id="kernel_version_label">
+                <property name="label">Kernel version</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="name">kernel_version_label</property>
+                <layout>
+                  <property name="row">2</property>
+                  <property name="column">0</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="kernel_version_value">
+                <property name="label">kernel_version_value</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="selectable">true</property>
+                <property name="name">kernel_version_value</property>
+                <layout>
+                  <property name="row">2</property>
+                  <property name="column">1</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Os version -->
+            <child>
+              <object class="GtkLabel" id="os_version_label">
+                <property name="label">Os version</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="name">os_version_label</property>
+                <layout>
+                  <property name="row">3</property>
+                  <property name="column">0</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="os_version_value">
+                <property name="label">os_version_value</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="selectable">true</property>
+                <property name="name">os_version_value</property>
+                <layout>
+                  <property name="row">3</property>
+                  <property name="column">1</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+
+            <!-- Cpu numbers -->
+
+            <child>
+              <object class="GtkLabel" id="cpu_numbers_label">
+                <property name="label">Cpu numbers</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="name">cpu_numbers_label</property>
+                <layout>
+                  <property name="row">4</property>
+                  <property name="column">0</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="cpu_numbers_value">
+                <property name="label">Tcpu_numbers_value</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="selectable">true</property>
+                <property name="name">cpu_numbers_value</property>
+                <layout>
+                  <property name="row">4</property>
+                  <property name="column">1</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+
+
+            <!-- Cpu freq -->
+
+            <child>
+              <object class="GtkLabel" id="cpu_freq_label">
+                <property name="label">Cpu freq</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="name">cpu_freq_label</property>
+                <layout>
+                  <property name="row">5</property>
+                  <property name="column">0</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="cpu_freq_value">
+                <property name="label">cpu_freq_value</property>
+                <property name="margin-top">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="selectable">true</property>
+                <property name="name">cpu_freq_value</property>
+                <layout>
+                  <property name="row">5</property>
+                  <property name="column">1</property>
+                  <property name="row-span">2</property>
+                </layout>
+              </object>
+            </child>
+            
+
+
+          </object>
+        </child>
+
+        <!-- separator -->
+        <child>
+          <object class="GtkSeparator" id="horizontal_separator_1">
+            <property name="orientation">horizontal</property>
+            <property name="margin-top">10</property>
+            <property name="margin-bottom">10</property>
+          </object>
+        </child>
+
+        <!-- disk list box -->
+        <child>
+          <object class="GtkListBox" id="disk_list_box">
+            
+          </object>
+        </child>
+
+
+        <!-- sensor list box -->
+        <child>
+          <object class="GtkListBox" id="sensor_list_box">
+
+          </object>
+        </child>
+
+        <!-- gpu list box -->
+        <child>
+          <object class="GtkListBox" id="gpu_list_box">
+
+          </object>
+        </child>
+
+      </object>
+
+
+
+
+
+    </child>
+  </template>
+</interface>
