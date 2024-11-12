@@ -90,7 +90,7 @@ impl ObjectImpl for Window {
         
                     let ava_space = disk.available_space() / (1024 * 1024 * 1024);
                     let total_space = disk.total_space() / (1024 * 1024 * 1024);
-                    let disk_str = ava_space.to_string() + "  used of " + total_space.to_string().as_str() + "G";
+                    let disk_str = ava_space.to_string() + "  available of " + total_space.to_string().as_str() + "G";
         
                     let key_label = Label::new(Some(&format!("{}", disk.name().to_string_lossy().to_string())));
                     let value_label = Label::new(Some(&format!("{}", disk_str)));
